@@ -29,6 +29,7 @@ body{
     margin:40px;
 }
 
+/*Header Section*/
 header{
     text-align:center;
     width:100%;
@@ -45,6 +46,16 @@ header{
     font-size:20px;
 }
 
+.menu{
+    display:none;
+    margin:auto;
+}
+
+.headerlogo{
+    display:none;
+}
+
+/*Nav Section*/
 nav{
     display:flex;
     justify-content:space-around;
@@ -53,16 +64,34 @@ nav{
     margin-bottom:15px;
 }
 
-.button{
+a{
     text-decoration:none;
     color:black;
+    font-size:15px;
+}
+
+button{
     background-color:white;
     margin:15px;
     width:30%;
     padding:10px;
     border-radius:10px;
+    box-shadow:3px 3px lightgrey;
+    border:none;
 }
 
+button:hover{
+    background-color:#111111;
+    transition: .5s;
+    box-shadow:3px 3px grey;
+}
+
+button:hover a{
+    color:white;
+}
+
+
+/*Aside Section*/
 .logoimg{
     display:block;
     width:100%;
@@ -70,17 +99,8 @@ nav{
     margin:auto;
 }
 
-article{
-    display:block;
-    width:70%;
-    float:right;
-    margin:auto;
-    align-items: center;
-    line-height: 200%;
-}
-
-.menu{
-    display:none;
+aside .button{
+    width:100%;
     margin:auto;
 }
 
@@ -90,9 +110,21 @@ aside{
     text-align:center;
 }
 
-.headerlogo{
-    display:none;
+hr{
+    background-color:#333333;
+    margin:20px;
 }
+
+/*Article Section*/
+article{
+    display:block;
+    width:70%;
+    float:right;
+    margin:auto;
+    align-items: center;
+    line-height: 200%;
+}
+
 
 /*tablet view*/
 @media only screen and (max-width: 768px) {
@@ -127,12 +159,8 @@ aside{
     nav{
         display:none;
     }
-    .menu:hover nav{
-        display:block;
-    }
     .menu{
         display:block;
-        float:right;
         width:30px;
         height:30px;
     }
@@ -152,7 +180,6 @@ aside{
     }
     .headerlogo{
         display:block;
-        float:left;
         width:60px;
         margin:auto;
     }
