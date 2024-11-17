@@ -1,4 +1,140 @@
+@font-face {
+    font-family: pacifico;
+    src: url(fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+    font-family: nunitoitalic;
+    src: url(fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
 body{
     background-image: url("images/background.avif");
-    background-repeat: space;
+    background-repeat: repeat;
+    display:flex;
+    margin:0;
+    width:100vw;
+    align-items: center;
+    font-family:nunito;
+}
+
+#block{
+    background-color:#efefef;
+    padding:40px;
+    border-radius:10px;
+    margin:auto;
+    margin:40px;
+}
+
+header{
+    text-align:center;
+    width:100%;
+}
+
+.title{
+    font-family:pacifico;
+    font-size:40px;
+}
+
+.subtitle{
+    color:#111111;
+    font-family:nunitoitalic;
+    font-size:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    text-align:center;
+}
+
+.button{
+    text-decoration:none;
+    color:black;
+    background-color:white;
+    margin:15px;
+    width:30%;
+    padding:10px;
+    border-radius:10px;
+}
+
+.logoimg{
+    display:block;
+    width:100%;
+}
+
+article{
+    display:block;
+    width:70%;
+    float:right;
+    margin:auto;
+    align-items: center;
+    line-height: 200%;
+}
+
+.menu{
+    display:none;
+}
+
+aside{
+    width:25%;
+    float:left;
+    text-align:center;
+}
+/*tablet view*/
+@media only screen and (max-width: 768px) {
+    #block{
+        padding:20px;
+    }
+}
+
+/*phone view*/
+@media only screen and (max-width: 375px) {
+    #block{
+        margin:0;
+        border-radius:0;
+        padding:15px;
+        width:100vw;
+        height:100vh;
+    }
+    header{
+        display:flex;
+        background-color:white;
+    }
+    .title{
+        font-size:22px;
+    }
+    .subtitle{
+        font-size:10px;
+    }
+    nav{
+        display:none;
+    }
+    .menu:hover nav{
+        display:block;
+    }
+    .menu{
+        display:block;
+        float:right;
+        width:30px;
+        height:30px;
+    }
+    #headertxt{
+        width:80vw;
+        float:left;
+        display:block;
+    }
+    .logoimg{
+        display:none;
+    }
+    article{
+        width:100%;
+    }
+    aside{
+        width:100%;
+    }
 }
