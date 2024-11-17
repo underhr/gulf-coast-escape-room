@@ -110,7 +110,6 @@ aside{
 @media only screen and (max-width: 535px) {
     #block{
         margin:10px;
-        border-radius:0;
         padding:15px;
         width:100vw;
         height:100vh;
