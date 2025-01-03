@@ -31,38 +31,31 @@ body{
     overflow:auto;
 }
 
+
 /*Header Section*/
 header{
     text-align:center;
     width:100%;
 }
-
 .title{
     font-family:pacifico;
     font-size:40px;
 }
-
 .subtitle{
     color:#111111;
     font-family:nunitoitalic;
     font-size:20px;
 }
-
-.menubtn{
-    display:none;
-    margin:auto;
-}
-
-.headerlogo, header .button{
+.dropbtn{
     display:none;
 }
-
-#dropdown-content{
+.headerlogo{
+    display:none;
+}
+#dropdown{
     display:none;
 }
 
-#dropdown-content button{
-}
 
 /*Nav Section*/
 nav{
@@ -71,7 +64,6 @@ nav{
     width:100%;
     text-align:center;
     margin-bottom:15px;
-    background-color:red;
 }
 
 a{
@@ -147,6 +139,9 @@ article{
         width:100px;
         margin:3px;
     }
+    aside{
+        width:27%;
+    }
 }
 
 /*phone view*/
@@ -157,14 +152,17 @@ article{
     }
     #block{
         padding:15px;
-        width:100vw;
-        height:100vh;
     }
+
 /*header section*/
     header{
         display:flex;
-        align-items:center;
+        /*align-items:center;*/
+    }
+    #headertxt{
         width:80vw;
+        margin:auto;
+        display:block;
     }
     .title{
         font-size:22px;
@@ -172,46 +170,45 @@ article{
     .subtitle{
         font-size:15px;
     }
-    #headertxt{
-        width:80vw;
+    .headerlogo{
+        display:block;
+        width:60px;
         margin:auto;
-        display:block;
-    }
-/*nav section*/
-    nav{
-        display:none;
-    }
-    
-    .dropdown-contents{
-        display:block;
-    }
-    .menubtn{
-        display:block;
     }
     .menu{
         display:block;
         width:30px;
         height:30px;
     }
-        
+    .dropbtn{
+        color:#111111;
+        background-color:white;
+        margin:15px;
+        width:50px;
+        padding:10px;
+        border-radius:10px;
+        box-shadow:3px 3px lightgrey;
+        border:none;
+        cursor:pointer;
+        display:block;
+    }
+
+
+/*nav section*/
+    nav{
+        display:none;
+    }
     .logoimg{
         display:none;
     }
-    article{
-        width:100%;
-    }
-    aside{
-        width:100%;
-    }
-    .headerlogo, header .button{
-        display:block;
-        width:60px;
-        margin:auto;
-    }
-    header .button:hover{
-        background-color:lightgrey;
-    }
 }
+
+/*article and aside*/
+article, aside{
+    width:100%;
+}
+
+
 /*
 @media only screen and (max-width:450px){
     body{

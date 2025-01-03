@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css" type="text/css">
         <link rel="icon" type="image/x-icon" href="images/logo.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="script.js"></script>
         <title>Gulf Coast Escape Room, Inc</title>
     </head>
     <body>
@@ -18,9 +19,20 @@
                         <p class="subtitle">"WHERE ESCAPING IS KEY"</p>
                     </div>
 
-                    <button class="menubtn" width="50px";>
-                        <img src="images/menu.png" alt="menu icon" class="menu" width="50px">
-                    </button>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn" width="50px";>
+                            <img src="images/menu.png" alt="menu icon" class="menu" width="50px">
+                        </button>
+                        <div id="dropdown" class="dropdown-content">
+                            <a href="#">Home</a>
+                            <a href="#">Intro</a>
+                            <a href="#">Rooms</a>
+                            <a href="#">Corporate</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </div>
+                    
                 </header>
 
                 <nav>
