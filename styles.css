@@ -48,13 +48,20 @@ header{
     font-size:20px;
 }
 
-.menu{
+.menubtn{
     display:none;
     margin:auto;
 }
 
 .headerlogo, header .button{
     display:none;
+}
+
+#dropdown-content{
+    display:none;
+}
+
+#dropdown-content button{
 }
 
 /*Nav Section*/
@@ -64,6 +71,7 @@ nav{
     width:100%;
     text-align:center;
     margin-bottom:15px;
+    background-color:red;
 }
 
 a{
@@ -133,7 +141,6 @@ article{
 /*tablet view*/
 @media only screen and (max-width: 768px) {
     #block{
-        width:100vw;
         min-width:375px;
     }
     .button{
@@ -146,16 +153,18 @@ article{
 @media only screen and (max-width: 500px) {
     body{
         padding:5px;
+        margin:10px;
     }
     #block{
-        margin:10px;
         padding:15px;
         width:100vw;
         height:100vh;
     }
+/*header section*/
     header{
         display:flex;
         align-items:center;
+        width:80vw;
     }
     .title{
         font-size:22px;
@@ -163,19 +172,28 @@ article{
     .subtitle{
         font-size:15px;
     }
+    #headertxt{
+        width:80vw;
+        margin:auto;
+        display:block;
+    }
+/*nav section*/
     nav{
         display:none;
+    }
+    
+    .dropdown-contents{
+        display:block;
+    }
+    .menubtn{
+        display:block;
     }
     .menu{
         display:block;
         width:30px;
         height:30px;
     }
-    #headertxt{
-        width:80vw;
-        margin:auto;
-        display:block;
-    }
+        
     .logoimg{
         display:none;
     }
@@ -194,7 +212,7 @@ article{
         background-color:lightgrey;
     }
 }
-
+/*
 @media only screen and (max-width:450px){
     body{
         padding:0;
@@ -203,4 +221,4 @@ article{
         margin:0px;
         border-radius:0px;
     }
-}
+}*/
