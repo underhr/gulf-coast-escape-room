@@ -207,7 +207,11 @@ footer p{
 }
 
 @media only screen and (max-width: 550px) {
-    #infoSection h1{
+    #nav{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    h1{
         font-size: 25px;
     }
     #infoSection{
@@ -227,7 +231,7 @@ footer p{
         gap: 10px;
     }
     #mausoleumimg{
-        width: 100%;
-        margin-bottom: -18px;
+        width: 100vw;
+        margin-bottom: -10px;
     }
 }
