@@ -79,6 +79,7 @@ a{
     color: white;
     text-decoration: none;
     font-size: 20px;
+    display:block;
 }
 
 /* info section */
@@ -108,9 +109,8 @@ a{
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 5px;
+    padding: 0px;
     background-color: #090909;
-    border: 1px solid blue;
 }
 #bookNow{
     display: flex;
@@ -241,5 +241,6 @@ footer p{
     #mausoleumimg{
         width: 100vw;
         margin-bottom: -10px;
+        max-height: 300px;
     }
 }
