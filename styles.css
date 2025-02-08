@@ -71,6 +71,9 @@ header img{
 }
 
 /* nav section */
+nav{
+    margin-bottom: 20px;
+}
 #nav{
     display: flex;
     justify-content: space-evenly;
@@ -88,8 +91,6 @@ a{
     align-items: center;
     justify-content: space-evenly;
     gap:20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 #infoSection h1{
     text-align:right;
@@ -145,8 +146,6 @@ a{
 
 /* faq section */
 #faq{
-    margin-top: 20px;
-    margin-bottom: 20px;
     background-color: #141414;
 }
 #questionSection {
@@ -168,7 +167,7 @@ a{
 
 
 #questionSection h3{
-    font-weight: 400;
+    font-weight: 600;
     display: inline;
     margin-right: 10px;
 }
@@ -179,11 +178,36 @@ a{
 /* footer section */
 footer{
     bottom: 0px;
+    margin-top: 20px;
 }
 footer p{
     text-align: center;
     margin-top: 50px;
 }
+
+
+
+/* intro page */
+
+article{
+    position: relative;
+}
+.floatedImage:before{
+    float: right;
+    width: 1px;
+    height: 50%;
+    content: '';
+    border: 1px solid red;
+}
+#introzombie{
+    float: right;
+    clear: right;
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    box-shadow: 0px, 0px, 10px, rgba(0, 0, 0, 0.5);
+}
+
 
 /* media queries */
 @media only screen and (max-width: 950px){
